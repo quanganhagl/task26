@@ -1,27 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      <%= (typeof title != "undefined" ? title : "Page title") %>
-    </title>
-    <meta name="keywords" content="">
-    {{ meta }}
-    <script type="module" src="/_scss/style.js"></script>
-    {{ head }}
-  </head>
-  <body>
 
-    <%- include('_partials/header'); -%>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= (typeof title !="undefined" ? title : "Coco MGM Design" ) %>
+  </title>
+  <meta name="keywords" content="">
+  {{ meta }}
+  <script type="module" src="/_scss/style.js"></script>
+  {{ head }}
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/kozuka-gothic-pr6n">
+</head>
 
-    {{ content }}
+<body class="l-container">
 
-    <%- include('_partials/footer'); -%>
+
+  {{ content }}
+
+  <%- include('_partials/footer'); -%>
 
     {{ script }}
     <script src="./assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>

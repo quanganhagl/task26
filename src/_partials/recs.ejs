@@ -1,0 +1,22 @@
+<section class="c-recs">
+    <div class="c-recs__wrapper">
+        <img src="./assets/img/recs__logo.png" alt="RECOMMENDED POINT" class="c-recs__logo">
+        <h2 class="c-recs__heading">RECOMMENDED POINT</h2>
+        <h3 class="c-recs__subheading">イベント・見学会の
+            <span class="c-recs__highlight">見どころ！</span>
+        </h3>
+        <div class="c-recs__recblockswrapper">
+            <% recs.forEach(rec=> { %>
+                <article class="c-recs__recblock">
+                    <img src="<%= rec.imgurl %>" alt="<%= rec.recheading %>" class="c-recs__recimg">
+                    <h4 class="c-recs__recheading">
+                        <%= rec.recheading %>
+                    </h4>
+                    <p class="c-recs__recdescription">
+                        <%= rec.recdescription %>
+                    </p>
+                </article>
+                <% }) %>
+        </div>
+    </div>
+</section>

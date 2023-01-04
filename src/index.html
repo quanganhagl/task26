@@ -1,44 +1,33 @@
-<%- include('_layouts/layout', { title: 'Home page' }); -%>
+<%- include('_layouts/layout', { title: 'Coco MGM Design' }); -%>
 
-<!-- @meta -->
-<meta name="description" content="Home page">
-<!-- @@meta -->
+  <!-- @meta -->
+  <meta name="description" content="Home page">
+  <!-- @@meta -->
 
-<!-- @content -->
-<main class="p-top">
-  <section class="c-mainvisual">
-    <div class="c-mainvisual__inner">
-      <h2>LOREM IPSUM</h2>
-      <p>In volutpat metus quis velit malesuada</p>
-      <a href="<%= BASE_URL %>about.html" class="c-btn1">JOIN NOW</a>
-    </div>
-  </section>
+  <!-- @content -->
+  <main class="p-top">
+    <!-- mainvisual -->
+    <!-- *********************************** -->
+    <%- include('_partials/mainvisual'); -%>
 
-  <section class="p-top1">
-    <div class="l-container">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-      </p>
-    </div>
-  </section>
-</main>
-<!-- @@content -->
+      <!-- worries -->
+      <!-- *********************************** -->
+      <%- include('_partials/worries'); -%>
 
-<!-- @script -->
-<script>
-  console.log("home page");
-</script>
-<!-- @@script -->
+        <!-- benefits -->
+        <!-- *********************************** -->
+        <%- include('_partials/benefits'); -%>
+
+          <!-- recs -->
+          <!-- *********************************** -->
+          <!-- <%- include('_partials/recs'); -%> -->
+
+          <!-- voucher -->
+          <!-- *********************************** -->
+          <!-- <%- include('_partials/voucher'); -%> -->
+
+          <!-- designs -->
+          <!-- *********************************** -->
+          <!-- <%- include('_partials/designs'); -%> -->
+  </main>
+  <!-- @@content -->

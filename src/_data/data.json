@@ -6,5 +6,96 @@
         "url": "/"
       }
     ]
-  }
+  },
+  "worries": [
+    {
+      "id": "01",
+      "question": "子育てにはどんな家が良いんだろう？"
+    },
+    {
+      "id": "02",
+      "question": "理想の家って実現できるの？",
+      "note": "いろいろとこだわった"
+    },
+    {
+      "id": "03",
+      "question": "暮らしのスタイルがイメージできない",
+      "note": "家は建てたいけど"
+    }
+  ],
+  "benefits": [
+    {
+      "id": 1,
+      "heading": "実物を見て触って<span class='c-benefit__highlight'>体感</span>できます!",
+      "description": "カタログや資料だけではなく、高気密・高断熱の木<br>の住まいや、家事動線や収納スペースの女性目線で<br>叶った工夫など、実際に見て触ってご体感いただけます。 ",
+      "imgurl": "./assets/img/benefits__articleimg--1.jpg",
+      "numberbulletimgurl": "./assets/img/benefits__numberbullet1.svg"
+    },
+    {
+      "id": 2,
+      "heading": "土地情報<span class='c-benefit__highlight'>1000件以上</span>が見放題!",
+      "description": "愛媛県の最新の土地情報から、学区・最寄りの駅な<br>どご希望の条件でお好きな土地をご覧いただけます。<br>さらに、地盤予測や付帯工事費なども含め、建てた<br>後も安心して暮らせる総合的な土地のアドバイスを<br>いたします。 ",
+      "imgurl": "./assets/img/benefits__articleimg--2.jpg",
+      "numberbulletimgurl": "./assets/img/benefits__numberbullet2.svg"
+    },
+    {
+      "id": 3,
+      "heading": "お客様に合った<span class='c-benefit__highlight'>住宅ローン</span>を診断!",
+      "description": "住宅ローンアドバイザーの資格を持ったスタッフが、<br>住宅ローン提携5大金融機関からお客様に合った適<br>正住宅ローンを診断いたします。 ",
+      "imgurl": "./assets/img/benefits__articleimg--3.jpg",
+      "numberbulletimgurl": "./assets/img/benefits__numberbullet3.svg"
+    }
+  ],
+  "recs": [
+    {
+      "id": 1,
+      "imgurl": "./assets/img/recs__recimg1.jpg",
+      "recheading": "豊富な+FUNのオプション",
+      "recdescription": "1,100万円の家をベースに、ライフスタイルにあった+FUNのオプションを組み合わせられます。価格が決まった明朗なシステムで、GOOD DESIGN賞を受賞。"
+    },
+    {
+      "id": 2,
+      "imgurl": "./assets/img/recs__recimg2.jpg",
+      "recheading": "シンプルな四角い外観",
+      "recdescription": "住む方の生活に馴染むよう、シンプルでムダを削ぎ落とした四角い家。凹凸のないレイアウトで、室内も広々した空間を実現。"
+    },
+    {
+      "id": 3,
+      "imgurl": "./assets/img/recs__recimg3.jpg",
+      "recheading": "ガルバリウム鋼板の外壁・屋根",
+      "recdescription": "外壁・屋根に使われているガルバリウム鋼板は、無<br>骨で美しいZERO-CUBEの外観の特徴。<br>耐久・耐熱性など機能面に優れた、高品質の素材です。"
+    },
+    {
+      "id": 4,
+      "imgurl": "./assets/img/recs__recimg4.jpg",
+      "recheading": "家族を感じるリビング",
+      "recdescription": "1階が見渡せる対面キッチンでは、家族との会話も弾みます。吹き抜けのリビングイン階段は、居間を導線の中心に考えた、家族のコミュニケーションが生まれる設計。"
+    }
+  ],
+  "designs": [
+    {
+      "id": 1,
+      "imgurl": "./assets/img/designs__slickimg--1.jpg"
+    },
+    {
+      "id": 2,
+      "imgurl": "./assets/img/designs__slickimg--2.jpg"
+    },
+    {
+      "id": 3,
+      "imgurl": "./assets/img/designs__slickimg--3.jpg"
+    },
+    {
+      "id": 4,
+      "imgurl": "./assets/img/designs__slickimg--4.jpg"
+    },
+    {
+      "id": 5,
+      "imgurl": "./assets/img/designs__slickimg--5.jpg"
+    },
+    {
+      "id": 6,
+      "imgurl": "./assets/img/designs__slickimg--6.jpg"
+    }
+  ]
 }

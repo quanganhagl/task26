@@ -1,0 +1,25 @@
+<section class="c-worries">
+    <h2 class="c-worries__heading">家づくりの、こんな不安やお悩みないですか？</h2>
+    <div class="c-worries__blocks">
+        <% worries.forEach(worry=> { %>
+            <div class="c-worries__block">
+                <div class="c-worries__idcase">
+                    <p class="c-worries__id">
+                        <%= worry.id %>
+                    </p>
+                    <p class="c-worries__case">case</p>
+                </div>
+                <div class="c-worries__questionnote">
+                    <p class="c-worries__question">
+                        <%= worry.question %>
+                    </p>
+                    <% if (worry.note !=undefined ) { %>
+                        <p class="c-worries__note">
+                            <%= worry.note %>
+                        </p>
+                        <% } %>
+                </div>
+            </div>
+            <% }); %>
+    </div>
+</section>

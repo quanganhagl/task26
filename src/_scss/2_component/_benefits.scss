@@ -1,0 +1,60 @@
+.c-benefit {
+    margin-top: 140px;
+
+    .c-benefit__heading {
+        font-weight: 400;
+        font-size: 3.4rem;
+        text-align: center;
+    }
+
+    .c-benefit__highlight {
+        font-family: $secondary-fonts;
+        font-weight: 400;
+        color: $highlight-color;
+        font-size: 4.6rem;
+    }
+
+    .c-benefit__welcome {
+        text-align: center;
+        font-family: $special-fonts2;
+        font-weight: 400;
+        color: #000;
+        font-size: 4.8rem;
+    }
+
+    .c-benefits__blocks {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        gap: 50px;
+    }
+
+    .c-benefits__block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-benefits__numberbullet {
+        width: 89px;
+    }
+
+    .c-benefits__blockwordtext {
+        margin-left: 90px;
+    }
+
+    .c-benefits__blockheading {
+        font-size: 2.8rem;
+    }
+
+    .c-benefits__blockheadingicon {
+        position: relative;
+        width: fit-content;
+    }
+
+    .c-benefits__iconshine {
+        width: 42px;
+        position: absolute;
+        top: 0;
+        right: -25px;
+    }
+}

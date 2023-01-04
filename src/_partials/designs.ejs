@@ -1,0 +1,29 @@
+<section class="c-designs">
+    <div class="c-designs__slick">
+        <div class="c-designs__slickimgscontainer">
+            <% designs.forEach(design=> { %>
+                <img src="<%= design.imgurl %>" alt="DESIGN" class="c-designs__slickimg">
+                <% }); %>
+        </div>
+        <div class="c-designs__slickcontroller">
+            <img class="c-designs__slickleft" src="./assets/img/designs__slickleft.svg" alt="DESIGN">
+            <img class="c-designs__slickright" src="./assets/img/designs__slickright.svg" alt="DESIGN">
+
+        </div>
+    </div>
+    <h2 class="c-designs__heading">DESIGN</h2>
+    <hr class="c-designs__headinglinebreak">
+    <h3 class="c-designs__subheading">シンプルで美しいデザイン、
+        いつまでも・誰にでも愛される空間に。
+    </h3>
+    <p class="c-designs__description">
+        長く愛される「居心地の良い場所」はシンプルなルールで作られるもの。<br>
+        壁の色を白で統一したシンプルな間取り。<br>
+        余計な装飾は施さず、こだわりの家具やインテリアを<br>
+        あなた色に合わせてコーディネートを楽しめる<br>
+        年齢や性別を意識しない誰にでも愛される空間です。
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GtH-3_jjTvQ" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+</section>
