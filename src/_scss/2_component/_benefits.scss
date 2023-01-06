@@ -1,17 +1,33 @@
 .c-benefit {
-    margin-top: 140px;
+    padding: 119px 50px 0;
+    @include tab {
+        padding: 81px 43px 0;
+    }
 
     .c-benefit__heading {
         font-weight: 400;
         font-size: 3.4rem;
         text-align: center;
+        @include tab {
+            font-size: 1.3rem;
+            max-width: 80%;
+            margin: 0 auto;
+            line-height: 1.35;
+        }
     }
 
-    .c-benefit__highlight {
+    .c-benefit__headsechighlight {
         font-family: $secondary-fonts;
         font-weight: 400;
         color: $highlight-color;
         font-size: 4.6rem;
+        @media only screen and (max-width: 1400px) {
+            display: block;
+            @include tab {
+                font-size: 1.7rem;
+                display: unset;
+            }
+        }
     }
 
     .c-benefit__welcome {
@@ -20,30 +36,137 @@
         font-weight: 400;
         color: #000;
         font-size: 4.8rem;
+        margin-top: 18px;
+        letter-spacing: 4.2px;
+        @include tab {
+            font-size: 1.15rem;
+            margin-top: 6px;
+            letter-spacing: 1.2px;
+        }
     }
 
     .c-benefits__blocks {
         display: flex;
         flex-direction: column;
-        margin-top: 60px;
+        margin-top: 45px;
         gap: 50px;
+        @include tab {
+            margin-top: 15px;
+            gap: 0;
+        }
     }
 
     .c-benefits__block {
         display: flex;
         justify-content: space-between;
+        gap: 4.5%;
+        @include tab {
+            display: unset;
+        }
+
+        &:nth-child(2) {
+            flex-direction: row-reverse;
+            margin-top: 16px;
+            @include tab {
+                margin-top: 30px;
+            }
+
+            .c-benefits__numberbullet {
+                margin-left: 31px;
+                @include tab {
+                    margin-left: -6px;
+                }
+            }
+
+            .c-benefits__blockwordtext {
+                margin-left: 71px;
+                @include tab {
+                    margin-left: -5px;
+                    margin-top: 2px;
+                }
+            }
+
+            .c-benefits__blockheadingicon {
+                margin-left: 40px;
+            }
+
+            .c-benefits__iconshine {
+                right: -11%;
+            }
+
+            .c-benefits__blockdescription {
+                @include tab {
+                    margin-top: 11px;
+                    letter-spacing: 0.31px;
+                    margin-left: 40px;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            margin-top: 18px;
+            @include tab {
+                margin-top: 30px;
+            }
+
+            .c-benefits__blockword {
+                max-width: 50%;
+                @include tab {
+                    max-width: 100%;
+                }
+            }
+
+            .c-benefits__numberbullet {
+                @include tab {
+                    margin-left: -6px;
+                }
+            }
+
+            .c-benefits__blockwordtext {
+                margin-top: 4px;
+                @include tab {
+                    margin-top: 3px;
+                    margin-left: 35px;
+                }
+            }
+
+            .c-benefits__iconshine {
+                right: -8.5%;
+            }
+
+            .c-benefits__blockdescription {
+                @include tab {
+                    letter-spacing: 0.32px;
+                }
+            }
+        }
+    }
+
+    .c-benefits__blockword {
+        margin-left: 14px;
+        max-width: 49.1%;
+        @include tab {
+            max-width: 100%;
+            margin-left: 0;
+        }
     }
 
     .c-benefits__numberbullet {
         width: 89px;
+        @include tab {
+            width: 45px;
+        }
     }
 
     .c-benefits__blockwordtext {
-        margin-left: 90px;
-    }
-
-    .c-benefits__blockheading {
-        font-size: 2.8rem;
+        margin-left: 80px;
+        margin-top: 5px;
+        letter-spacing: 0.2px;
+        @include tab {
+            margin-left: 41px;
+            margin-top: 3px;
+            letter-spacing: 0.1px;
+        }
     }
 
     .c-benefits__blockheadingicon {
@@ -51,10 +174,55 @@
         width: fit-content;
     }
 
+    .c-benefits__blockheading {
+        font-size: 2.8rem;
+        @include tab {
+            font-size: 1.4rem;
+        }
+    }
+
+    .c-benefit__headblockhighlight {
+        color: $highlight-color;
+        font-size: 3.6rem;
+        @include tab {
+            font-size: 1.8rem;
+        }
+    }
+
     .c-benefits__iconshine {
         width: 42px;
         position: absolute;
-        top: 0;
-        right: -25px;
+        top: -21px;
+        right: -6%;
+        @include tab {
+            width: 21px;
+            top: -11px;
+        }
+    }
+
+    .c-benefits__blockdescription {
+        font-weight: 400;
+        font-size: 2.1rem;
+        margin-top: 24px;
+        letter-spacing: 0.7px;
+        line-height: 1.59;
+        @include tab {
+            font-size: 1.05rem;
+            margin-top: 10px;
+            letter-spacing: 0.28px;
+            line-height: 1.62;
+        }
+    }
+
+    .c-benefits__blockimg {
+        margin-top: 29px;
+        @include tab {
+            margin-top: 16px;
+        }
+    }
+
+    .c-benefits__blockimgcontainer {
+        display: flex;
+        align-items: center;
     }
 }

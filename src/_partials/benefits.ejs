@@ -1,29 +1,34 @@
-<section class="c-benefit l-container--1200px">
-  <h2 class="c-benefit__heading">
-    はじめての家づくりが具体的に進む、ご来店の
-    <span class="c-benefit__highlight">3つのメリット</span>
-  </h2>
-  <p class="c-benefit__welcome">WELCOME TO MODELHOUSE</p>
-  <div class="c-benefits__blocks">
-    <% benefits.forEach(benefit=> { %>
-      <div class="c-benefits__block">
-        <div class="c-benefits__blockword">
-          <img class="c-benefits__numberbullet" src="<%= benefit.numberbulletimgurl %>" alt="<%= benefit.heading %>">
-          <div class="c-benefits__blockwordtext">
-            <div class="c-benefits__blockheadingicon">
-              <h3 class="c-benefits__blockheading">
-                <%- benefit.heading %>
-              </h3>
-              <img class="c-benefits__iconshine" src="./assets/img/benefits__iconshine.svg"
-                alt=" <%= benefit.heading %>">
+<section class="c-benefit ">
+  <div class="l-container--1200px">
+    <h2 class="c-benefit__heading">
+      はじめての家づくりが具体的に進む、ご来店の
+      <span class="c-benefit__headsechighlight">3 つのメリット</span>
+    </h2>
+    <p class="c-benefit__welcome">WELCOME TO MODELHOUSE</p>
+    <div class="c-benefits__blocks">
+      <% benefits.forEach(benefit=> { %>
+        <div class="c-benefits__block">
+          <div class="c-benefits__blockword">
+            <img class="c-benefits__numberbullet" src="<%= benefit.numberbulletimgurl %>" alt="<%= benefit.heading %>">
+            <div class="c-benefits__blockwordtext">
+              <div class="c-benefits__blockheadingicon">
+                <h3 class="c-benefits__blockheading">
+                  <%- benefit.heading %>
+                </h3>
+                <img class="c-benefits__iconshine" src="./assets/img/benefits__iconshine.svg"
+                  alt=" <%= benefit.heading %>">
+              </div>
+              <p class="c-benefits__blockdescription">
+                <%- benefit.description %>
+              </p>
             </div>
-            <p class="c-benefits__blockdescription">
-              <%- benefit.description %>
-            </p>
           </div>
+          <picture class="c-benefits__blockimgcontainer">
+            <source media="(max-width: 992px)" srcset="<%= benefit.imgurl %>--sp.jpg">
+            <img class="c-benefits__blockimg" src="<%= benefit.imgurl %>.jpg" alt="<%= benefit.heading %>">
+          </picture>
         </div>
-        <img class="c-benefits__blockimg" src="<%= benefit.imgurl %>" alt="<%= benefit.heading %>">
-      </div>
-      <% }); %>
+        <% }); %>
+    </div>
   </div>
 </section>

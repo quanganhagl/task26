@@ -26,23 +26,23 @@
   "benefits": [
     {
       "id": 1,
-      "heading": "実物を見て触って<span class='c-benefit__highlight'>体感</span>できます!",
-      "description": "カタログや資料だけではなく、高気密・高断熱の木<br>の住まいや、家事動線や収納スペースの女性目線で<br>叶った工夫など、実際に見て触ってご体感いただけます。 ",
-      "imgurl": "./assets/img/benefits__articleimg--1.jpg",
+      "heading": "実物を見て触って<span class='c-benefit__headblockhighlight'>体感</span>できます !",
+      "description": "カタログや資料だけではなく、高気密・高断熱の木<br class='is-inlineat1300px'>の住まいや、家事動線や収納スペースの女性目線で<br class='is-inlineat1300px'>叶った工夫など、実際に見て触ってご体感いただけます。 ",
+      "imgurl": "./assets/img/benefits__articleimg1",
       "numberbulletimgurl": "./assets/img/benefits__numberbullet1.svg"
     },
     {
       "id": 2,
-      "heading": "土地情報<span class='c-benefit__highlight'>1000件以上</span>が見放題!",
-      "description": "愛媛県の最新の土地情報から、学区・最寄りの駅な<br>どご希望の条件でお好きな土地をご覧いただけます。<br>さらに、地盤予測や付帯工事費なども含め、建てた<br>後も安心して暮らせる総合的な土地のアドバイスを<br>いたします。 ",
-      "imgurl": "./assets/img/benefits__articleimg--2.jpg",
+      "heading": "土地情報<span class='c-benefit__headblockhighlight'>1000件以上</span>が見放題!",
+      "description": "愛媛県の最新の土地情報から、学区・最寄りの駅な<br class='is-inlineat1300px'>どご希望の条件でお好きな土地をご覧いただけます<span class='is-palt'>。</span><br class='is-inlineat1300px'>さらに、地盤予測や付帯工事費なども含め、建てた<br class='is-inlineat1300px'>後も安心して暮らせる総合的な土地のアドバイスを<br class='is-inlineat1300px'>いたします。 ",
+      "imgurl": "./assets/img/benefits__articleimg2",
       "numberbulletimgurl": "./assets/img/benefits__numberbullet2.svg"
     },
     {
       "id": 3,
-      "heading": "お客様に合った<span class='c-benefit__highlight'>住宅ローン</span>を診断!",
-      "description": "住宅ローンアドバイザーの資格を持ったスタッフが、<br>住宅ローン提携5大金融機関からお客様に合った適<br>正住宅ローンを診断いたします。 ",
-      "imgurl": "./assets/img/benefits__articleimg--3.jpg",
+      "heading": "お客様に合った<span class='c-benefit__headblockhighlight'>住宅ローン</span>を診断!",
+      "description": "住宅ローンアドバイザーの資格を持ったスタッフが<span class='is-palt'>、</span><br class='is-inlineat1300px'>住宅ローン提携5大金融機関からお客様に合った適<br class='is-inlineat1300px'>&nbsp; 正住宅ローンを診断いたします。 ",
+      "imgurl": "./assets/img/benefits__articleimg3",
       "numberbulletimgurl": "./assets/img/benefits__numberbullet3.svg"
     }
   ],
@@ -51,7 +51,7 @@
       "id": 1,
       "imgurl": "./assets/img/recs__recimg1.jpg",
       "recheading": "豊富な+FUNのオプション",
-      "recdescription": "1,100万円の家をベースに、ライフスタイルにあった+FUNのオプションを組み合わせられます。価格が決まった明朗なシステムで、GOOD DESIGN賞を受賞。"
+      "recdescription": "1,100万円の家をベースに、ライフスタイルにあった+FUNのオプシ<span class='is-notdisplay--pc'> </span>ョンを組み合わせられます。価格が決まった明朗なシステムで、GOOD DESIGN賞を受賞。"
     },
     {
       "id": 2,
@@ -63,13 +63,13 @@
       "id": 3,
       "imgurl": "./assets/img/recs__recimg3.jpg",
       "recheading": "ガルバリウム鋼板の外壁・屋根",
-      "recdescription": "外壁・屋根に使われているガルバリウム鋼板は、無<br>骨で美しいZERO-CUBEの外観の特徴。<br>耐久・耐熱性など機能面に優れた、高品質の素材です。"
+      "recdescription": "外壁・屋根に使われているガルバリウム鋼板は、無骨で美しいZE&shy;RO-CUBEの外観の特徴。<br>耐久・耐熱性など機能面に優れた<span class='is-notdisplay--pc'> &nbsp; </span>、高品質の素材です。"
     },
     {
       "id": 4,
       "imgurl": "./assets/img/recs__recimg4.jpg",
       "recheading": "家族を感じるリビング",
-      "recdescription": "1階が見渡せる対面キッチンでは、家族との会話も弾みます。吹き抜けのリビングイン階段は、居間を導線の中心に考えた、家族のコミュニケーションが生まれる設計。"
+      "recdescription": "1階が見渡せる対面キッチンでは<span class='is-notdisplay--pc'> &nbsp; </span>、家族との会話も弾みます。吹き抜けのリビングイン階段は、居間を導線の中心に考えた、家族のコミュニケーションが生まれる設計<span class='is-notdisplay--sp'>。</span>"
     }
   ],
   "designs": [

@@ -1,5 +1,5 @@
 .c-worries {
-    margin: 76px auto 0;
+    padding: 76px 100px 0;
     @include tab {
         margin-top: 48px;
         padding: 0 25px;
@@ -16,15 +16,14 @@
     }
 
     .c-worries__blocks {
-        margin-top: -29px;
         display: flex;
         justify-content: space-between;
-        padding: 0 9.8%;
+        margin: -29px auto 0;
+        width: 100%;
+        max-width: 1546px;
         @include tab {
-            padding: 0;
             flex-direction: column;
             max-width: 325px;
-            margin: -29px auto 0;
         }
     }
 
@@ -223,7 +222,8 @@
             border-bottom: 29px solid black;
             position: absolute;
             top: -28px;
-            left: 28.6%;
+            // left: 28.6%;
+            left: 135px;
             @include tab {
                 left: 28.4%;
                 top: -21px;
@@ -245,6 +245,7 @@
         border-radius: 20px;
         letter-spacing: -1.8px;
         width: 212px;
+
         @include tab {
             font-size: 1.25rem;
 

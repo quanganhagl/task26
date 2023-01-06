@@ -14,3 +14,23 @@
 //------------------------------------------------------------
 // color
 //------------------------------------------------------------
+.is-inlineat1300px {
+    display: none;
+}
+
+.is-palt {
+    font-feature-settings: "palt";
+}
+
+.is-notdisplay--pc {
+    display: none;
+    @include tab {
+        display: unset;
+    }
+}
+
+.is-notdisplay--sp {
+    @include tab {
+        display: none;
+    }
+}

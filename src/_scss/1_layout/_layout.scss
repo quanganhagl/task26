@@ -3,7 +3,9 @@
 body {
     font-family: $main-fonts;
     font-size: 1.9rem;
+    font-weight: 400;
     color: $main-color;
+
     line-height: 1.5;
 
     @include sp {
