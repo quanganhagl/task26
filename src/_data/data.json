@@ -75,27 +75,117 @@
   "designs": [
     {
       "id": 1,
-      "imgurl": "./assets/img/designs__slickimg--1.jpg"
+      "imgurl": "./assets/img/designs__slickimg--1.jpg",
+      "imgurlsp": "./assets/img/designs__slickimg--1--sp.jpg"
     },
     {
       "id": 2,
-      "imgurl": "./assets/img/designs__slickimg--2.jpg"
+      "imgurl": "./assets/img/designs__slickimg--2.jpg",
+      "imgurlsp": "./assets/img/designs__slickimg--2.jpg"
     },
     {
       "id": 3,
-      "imgurl": "./assets/img/designs__slickimg--3.jpg"
+      "imgurl": "./assets/img/designs__slickimg--3.jpg",
+      "imgurlsp": "./assets/img/designs__slickimg--3.jpg"
     },
     {
       "id": 4,
-      "imgurl": "./assets/img/designs__slickimg--4.jpg"
+      "imgurl": "./assets/img/designs__slickimg--4.jpg",
+      "imgurlsp": "./assets/img/designs__slickimg--4.jpg"
     },
     {
       "id": 5,
-      "imgurl": "./assets/img/designs__slickimg--5.jpg"
+      "imgurl": "./assets/img/designs__slickimg--5.jpg",
+      "imgurlsp": "./assets/img/designs__slickimg--5.jpg"
     },
     {
       "id": 6,
-      "imgurl": "./assets/img/designs__slickimg--6.jpg"
+      "imgurl": "./assets/img/designs__slickimg--6.jpg",
+      "imgurlsp": "./assets/img/designs__slickimg--6.jpg"
+    }
+  ],
+  "planimages": [
+    {
+      "id": 1,
+      "imageurl": "./assets/image/plan__image1f.jpg",
+      "imageurlsp": "./assets/image/plan__image1f--sp.jpg",
+      "label": "1F"
+    },
+    {
+      "id": 2,
+      "imageurl": "./assets/image/plan__image2f.jpg",
+      "imageurlsp": "./assets/image/plan__image2f--sp.jpg",
+      "label": "2F"
+    }
+  ],
+  "areainfos": [
+    {
+      "id": 1,
+      "areadata": "1階床面積 　192.53㎡（58.24坪）"
+    },
+    {
+      "id": 2,
+      "areadata": "2階床面積　139.01㎡（42.05坪）"
+    },
+    {
+      "id": 3,
+      "areadata": "延床面積　331.54㎡（100.29坪）"
+    }
+  ],
+  "plandetails": [
+    {
+      "id": 1,
+      "tablehead": "商品プラン",
+      "tabledatas": "ZERO-CUBE"
+    },
+    {
+      "id": 2,
+      "tablehead": "構造",
+      "tabledatas": "木造2階建て"
+    },
+    {
+      "id": 3,
+      "tablehead": "設備・仕様",
+      "tabledatas": [
+        {
+          "id": 1,
+          "label": "W断熱/TOPS工法"
+        },
+        {
+          "id": 2,
+          "label": "無垢材・自然素材"
+        },
+        {
+          "id": 3,
+          "label": "高性能住宅"
+        },
+        {
+          "id": 4,
+          "label": "玄関共有タイプ"
+        },
+        {
+          "id": 5,
+          "label": "防音構造床"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "tablehead": "空間",
+      "tabledatas": [
+        {
+          "id": 1,
+          "label": "二世帯・多世帯"
+        },
+        {
+          "id": 2,
+          "label": "1、2階リビング"
+        },
+        {
+          "id": 3,
+          "label": "吹抜け"
+        }
+      ]
     }
   ]
 }

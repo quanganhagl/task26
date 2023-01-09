@@ -3,7 +3,10 @@
         <div class="c-designs__slickimgscontainer">
             <% designs.forEach(design=> { %>
                 <div class="c-designs__slickimgblock">
-                    <img src="<%= design.imgurl %>" alt="DESIGN" class="c-designs__slickimg">
+                    <picture>
+                        <source media="(max-width: 992px)" srcset="<%= design.imgurlsp %>">
+                        <img src="<%= design.imgurl %>" alt="DESIGN" class="c-designs__slickimg">
+                    </picture>
                 </div>
                 <% }); %>
         </div>
@@ -14,20 +17,27 @@
                 alt="DESIGN">
         </div>
     </div>
-    <h2 class="c-designs__heading">DESIGN</h2>
-    <hr class="c-designs__headinglinebreak">
-    <h3 class="c-designs__subheading">シンプルで美しいデザイン、<br>
-        いつまでも・誰にでも愛される空間に。
-    </h3>
-    <p class="c-designs__description">
-        長く愛される「居心地の良い場所」はシンプルなルールで作られるもの。<br>
-        壁の色を白で統一したシンプルな間取り。<br>
-        余計な装飾は施さず、こだわりの家具やインテリアを<br>
-        あなた色に合わせてコーディネートを楽しめる<br>
-        年齢や性別を意識しない誰にでも愛される空間です。
-    </p>
-    <iframe class="c-designs__video" width="560" height="315" src="https://www.youtube.com/embed/GtH-3_jjTvQ"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+    <div class="c-designs__textvideo">
+        <div class="c-designs__text">
+            <h2 class="c-designs__heading">DESIGN</h2>
+            <hr class="c-designs__headinglinebreak">
+            <h3 class="c-designs__subheading">シンプルで美しいデザイン、<br>
+                いつまでも・誰にでも愛される空間に。
+            </h3>
+            <p class="c-designs__description">
+                長く愛される「居心地の良い場所」はシンプルなルールで作られるもの<span class="is-palt">。</span><br>
+                壁の色を白で統一したシンプルな間取り。<br>
+                余計な装飾は施さず、こだわりの家具やインテリアを<br class="is-inlinefrom993pxto1200px">
+                あなた色に合わせてコーディネートを楽しめる<br class="is-inlinefrom993pxto1200px">
+                年齢や性別を意識しない誰にでも愛される空間です。
+            </p>
+
+        </div>
+        <div class="c-designs__videoblock">
+            <iframe class="c-designs__video" src="https://www.youtube.com/embed/GtH-3_jjTvQ?hl=ja&persist_hl=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
 </section>
