@@ -58,6 +58,7 @@
     z-index: -1;
     @include tab {
       top: 453px;
+      height: 400px;
 
       @include sp {
         height: 258px;
@@ -113,7 +114,7 @@
       min-width: unset;
       @include tab {
         flex-direction: column;
-        margin: 42px auto;
+        margin: 42px auto 0;
         max-width: 750px;
         @include sp {
           width: 90.1%;

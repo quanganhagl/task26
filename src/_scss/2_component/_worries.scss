@@ -1,5 +1,5 @@
 .c-worries {
-    padding: 76px 100px 0;
+    padding: 75px 50px 0;
     @include tab {
         margin-top: 48px;
         padding: 0 25px;
@@ -11,7 +11,10 @@
         font-size: 3.6rem;
         text-align: center;
         @include tab {
-            font-size: 1.5rem;
+            font-size: 2.5rem;
+            @include sp {
+                font-size: 1.5rem;
+            }
         }
     }
 
@@ -23,7 +26,11 @@
         max-width: 1546px;
         @include tab {
             flex-direction: column;
-            max-width: 325px;
+            max-width: 500px;
+
+            @include sp {
+                max-width: 325px;
+            }
         }
     }
 
@@ -89,7 +96,10 @@
                 }
 
                 .c-worries__case {
-                    bottom: 75px;
+                    bottom: 90px;
+                    @include sp {
+                        bottom: 75px;
+                    }
                 }
 
                 .c-worries__questionnote {
@@ -97,11 +107,12 @@
                 }
 
                 .c-worries__question {
-                    padding: 30px 0 31px;
                     margin-top: -82px;
 
                     &::before {
-                        left: 64.7%;
+                        // left: 64.7%;
+                        right: 93px;
+                        left: unset;
                         top: -20px;
                         border-left: 19px solid transparent;
                         border-right: 3px solid transparent;
@@ -114,8 +125,11 @@
                     padding: 0;
                     height: 25px;
                     line-height: 25px;
-                    width: 146px;
+                    width: 175px;
                     letter-spacing: -1.2px;
+                    @include sp {
+                        width: 146px;
+                    }
                 }
             }
 
@@ -127,12 +141,15 @@
                 }
 
                 .c-worries__questionnote {
-                    margin-top: 43px;
+                    margin-top: 42px;
                 }
 
                 .c-worries__question {
                     letter-spacing: -0.5px;
                     padding: 30px 8px 33px 0;
+                    @include sp {
+                        padding: 0 38px 3px 30px;
+                    }
                 }
 
                 .c-worries__note {
@@ -142,8 +159,11 @@
                     padding: 0;
                     height: 25px;
                     line-height: 25px;
-                    width: 146px;
+                    width: 175px;
                     letter-spacing: -0.6px;
+                    @include sp {
+                        width: 146px;
+                    }
                 }
             }
         }
@@ -161,7 +181,10 @@
         font-size: 21.35rem;
         position: relative;
         @include tab {
-            font-size: 14.79rem;
+            font-size: 18rem;
+            @include sp {
+                font-size: 14.79rem;
+            }
         }
     }
 
@@ -177,10 +200,14 @@
         width: 100%;
         text-align: center;
         @include tab {
-            bottom: 72px;
-            font-size: 1.66rem;
-            transform: translateX(2px);
-            letter-spacing: 4px;
+            bottom: 90px;
+            font-size: 2rem;
+            @include sp {
+                bottom: 72px;
+                font-size: 1.66rem;
+                transform: translateX(2px);
+                letter-spacing: 4px;
+            }
         }
     }
 
@@ -195,22 +222,30 @@
         font-weight: 700;
         font-size: 2.4rem;
         color: #fff;
-        padding: 44px 35px 46px;
+        padding: 0 35px;
         border-radius: 6px;
         background-color: #000;
         position: relative;
         margin-top: -56px;
         font-feature-settings: "palt";
+        height: 126px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        @media only screen and (max-width: 1850px) {
-            height: 162px;
-            @media only screen and (max-width: 1120px) {
-                height: 198px;
-                @include tab {
-                    height: fit-content;
+        @media only screen and (max-width: 1200px) {
+            font-size: 2.2rem;
+
+            @include tab {
+                height: fit-content;
+
+                font-size: 1.9rem;
+                padding: 31px 0;
+                margin-top: -82px;
+                @include sp {
                     font-size: 1.65rem;
-                    padding: 31px 0;
-                    margin-top: -82px;
+                    padding: 0 30px;
+                    height: 87px;
                 }
             }
         }
@@ -225,7 +260,8 @@
             // left: 28.6%;
             left: 135px;
             @include tab {
-                left: 28.4%;
+                // left: 28.4%;
+                left: 92px;
                 top: -21px;
             }
         }
@@ -247,10 +283,14 @@
         width: 212px;
 
         @include tab {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
 
-            &:not(:nth-child(1)) {
-                top: -10px;
+            @include sp {
+                font-size: 1.25rem;
+
+                &:not(:nth-child(1)) {
+                    top: -10px;
+                }
             }
         }
     }

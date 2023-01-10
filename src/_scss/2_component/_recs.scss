@@ -1,197 +1,225 @@
 .c-recs {
-    padding: 164px 0 0;
-    overflow-x: clip;
+  padding: 164px 0 0;
+  overflow-x: clip;
+  @include tab {
+    padding: 72px 0 0;
+    @include sp {
+      padding: 57px 0 0;
+    }
+  }
+
+  .c-recs__wrapper {
+    background-color: $secondary-color;
+    position: relative;
+    padding: 0 4%;
+    max-width: 1740px;
+    margin: 0 auto;
     @include tab {
-        padding: 72px 0 0;
+      padding: 0 2.5%;
+
+      position: relative;
     }
+  }
 
-    .c-recs__wrapper {
-        background-color: $secondary-color;
-        position: relative;
-        padding: 0 4%;
-        max-width: 1740px;
-        margin: 0 auto;
-        @include tab {
-            padding: 0 2.5%;
+  .c-recs__headinglogoblock {
+    // width: 29.2%;
+    width: 34.1%;
+    padding-left: 5.1%;
+  }
 
-            position: relative;
-        }
+  .c-recs__headinglogo {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 78px * 2);
+    gap: 2%;
+    transform: translateY(-55%);
+    align-items: center;
+    min-height: 300px;
+    @include tab {
+      left: 0;
+      display: block;
+      top: -108px;
+      width: 100%;
     }
+  }
 
-    .c-recs__headinglogoblock {
-        // width: 29.2%;
-        width: 34.1%;
-        padding-left: 5.1%;
+  .c-recs__logo {
+    // margin-left: 27.2%;
+    // margin-left: 7.9%;
+    margin-left: 10.4%;
+    @include tab {
+      display: none;
     }
+  }
 
-    .c-recs__headinglogo {
-        position: absolute;
-        display: flex;
-        justify-content: space-between;
-        width: calc(100% - 78px * 2);
-        gap: 2%;
-        transform: translateY(-55%);
-        align-items: center;
-        min-height: 300px;
-        @include tab {
-            left: 0;
-            display: block;
-            top: -108px;
-            width: 100%;
-        }
+  .c-recs__logo--sp {
+    display: none;
+    @include tab {
+      display: unset;
+      max-width: 290px;
+      position: absolute;
+      right: -4px;
+      bottom: -62px;
+      @include sp {
+        max-width: 217px;
+        right: -4px;
+        bottom: -42px;
+      }
     }
+  }
 
-    .c-recs__logo {
-        // margin-left: 27.2%;
-        // margin-left: 7.9%;
-        margin-left: 10.4%;
-        @include tab {
-            display: none;
-        }
+  .c-recs__headingblock {
+    // margin-right: -1.8%;
+    margin-right: -2.5%;
+    margin-bottom: 32px;
+    flex: 0 0 812px;
+
+    text-align: end;
+    margin-bottom: -52px;
+    @include scr1200px {
+      flex: 0 0 auto;
+      @include tab {
+        // margin-top: 84px;
+        // margin-right: 0;
+        margin-top: 249px;
+        margin-right: 11px;
+      }
     }
+  }
 
-    .c-recs__logo--sp {
-        display: none;
-        @include tab {
-            display: unset;
-            max-width: 217px;
-            position: absolute;
-            right: -4px;
-            bottom: -42px;
-        }
-    }
-
-    .c-recs__headingblock {
-        margin-right: -1.8%;
-        margin-bottom: 32px;
-        flex: 0 0 795px;
+  .c-recs__heading {
+    font-family: $special-fonts2;
+    font-weight: 400;
+    color: #000;
+    font-size: 8.24rem;
+    // letter-spacing: 7.3px;
+    letter-spacing: 8.3px;
+    @include scr1200px {
+      font-size: 4.8rem;
+      @include tab {
+        font-size: 6rem;
         text-align: end;
-        margin-bottom: -52px;
-        @include scr1200px {
-            flex: 0 0 auto;
-            @include tab {
-                // margin-top: 84px;
-                // margin-right: 0;
-                margin-top: 249px;
-                margin-right: 11px;
-            }
+        // margin-right: -145px;
+        letter-spacing: 3.1px;
+        @include sp {
+          font-size: 3.05rem;
         }
+      }
+    }
+  }
+
+  .c-recs__subheading {
+    font-weight: 400;
+    font-size: 3.4rem;
+    color: $main-color;
+    margin-top: -9px;
+    // transform: translate(7px, 1px);
+    transform: translate(-1px, 1px);
+    @include tab {
+      font-size: 2.3rem;
+      transform: unset;
+      margin-top: -2px;
+      letter-spacing: 0;
+      // margin-right: -147px;
+      @include sp {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .c-recs__highlight {
+    font-family: $secondary-fonts;
+    font-size: 4.6rem;
+    color: $highlight-color;
+    @include tab {
+      font-size: 1.75rem;
+    }
+  }
+
+  .c-recs__recblockswrapper {
+    display: flex;
+    padding: 147px 0 77px;
+    column-gap: 1.4%;
+    margin: 0 auto;
+    max-width: 1584px;
+    @include tab {
+      column-gap: 13px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 100px 0 123px;
+      max-width: 700px;
+      row-gap: 16px;
+      @include sp {
+        max-width: 550px;
+        padding: 75px 0 123px;
+      }
+    }
+  }
+
+  .c-recs__recblock {
+    padding: 1.4% 1.2% 2.8% 1.4%;
+    background-color: #fff;
+    width: 25%;
+
+    @include tab {
+      padding: 10px;
+      width: calc((100% - 13px) / 2);
+      //   max-width: 250px;
     }
 
-    .c-recs__heading {
-        font-family: $special-fonts2;
-        font-weight: 400;
-        color: #000;
-        font-size: 8.24rem;
-        letter-spacing: 7.3px;
-        @include scr1200px {
-            font-size: 4.8rem;
-            @include tab {
-                font-size: 3.05rem;
-                text-align: end;
-                // margin-right: -145px;
-                letter-spacing: 3.1px;
-            }
+    &:nth-child(3) {
+      @include tab {
+        .c-recs__recheading {
+          width: 102%;
         }
+      }
     }
 
-    .c-recs__subheading {
-        font-weight: 400;
-        font-size: 3.4rem;
-        color: $main-color;
-        margin-top: -9px;
-        transform: translate(7px, 1px);
+    &:nth-child(3),
+    &:nth-child(4) {
+      .c-recs__recheading {
         @include tab {
-            font-size: 1.25rem;
-            transform: unset;
-            margin-top: -2px;
-            letter-spacing: 0;
-            // margin-right: -147px;
+          margin-top: 5px;
+          line-height: 1.39;
         }
+      }
     }
+  }
 
-    .c-recs__highlight {
-        font-family: $secondary-fonts;
-        font-size: 4.6rem;
-        color: $highlight-color;
-        @include tab {
-            font-size: 1.75rem;
-        }
+  .c-recs__rectextblock {
+    margin-top: 23px;
+    @include tab {
+      margin-top: 10px;
     }
+  }
 
-    .c-recs__recblockswrapper {
-        display: flex;
-        padding: 147px 0 77px;
-        column-gap: 1.4%;
-        margin: 0 auto;
-        max-width: 1584px;
-        @include tab {
-            column-gap: 13px;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 75px 0 123px;
-            row-gap: 16px;
-            max-width: 550px;
-        }
+  .c-recs__recheading {
+    font-weight: 400;
+    font-size: 2.3rem;
+    @include tab {
+      font-size: 2.2rem;
+      @include sp {
+        font-size: 1.1rem;
+      }
     }
+  }
 
-    .c-recs__recblock {
-        padding: 1.4% 1.2% 2.8% 1.4%;
-        background-color: #fff;
-        width: 25%;
-
-        @include tab {
-            padding: 10px;
-            width: 48.1%;
-            max-width: 250px;
-        }
-
-        &:nth-child(3) {
-            @include tab {
-                .c-recs__recheading {
-                    width: 102%;
-                }
-            }
-        }
-
-        &:nth-child(3),
-        &:nth-child(4) {
-            .c-recs__recheading {
-                @include tab {
-                    margin-top: 5px;
-                    line-height: 1.39;
-                }
-            }
-        }
+  .c-recs__recdescription {
+    font-weight: 300;
+    margin-top: 11px;
+    letter-spacing: 0.2px;
+    line-height: 1.44;
+    max-width: 98%;
+    @include tab {
+      font-size: 1.5rem;
+      min-height: 70px;
+      margin-top: 7px;
+      line-height: 1.35;
+      letter-spacing: 0.03px;
+      @include sp {
+        font-size: 0.95rem;
+      }
     }
-
-    .c-recs__rectextblock {
-        margin-top: 23px;
-        @include tab {
-            margin-top: 10px;
-        }
-    }
-
-    .c-recs__recheading {
-        font-weight: 400;
-        font-size: 2.3rem;
-        @include tab {
-            font-size: 1.1rem;
-        }
-    }
-
-    .c-recs__recdescription {
-        font-weight: 300;
-        margin-top: 11px;
-        letter-spacing: 0.2px;
-        line-height: 1.44;
-        max-width: 98%;
-        @include tab {
-            font-size: 0.95rem;
-            min-height: 70px;
-            margin-top: 7px;
-            line-height: 1.35;
-            letter-spacing: 0.03px;
-        }
-    }
+  }
 }

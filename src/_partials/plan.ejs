@@ -1,52 +1,57 @@
-<section class="c-plan l-container--1200px">
-    <div class="c-plan__headingblock">
-        <h2 class="c-plan__heading">PLAN</h2>
-        <hr class="c-plan__headingline">
-    </div>
-    <div class="c-plan__imagesblock">
-        <% planimages.forEach(planimage=> { %>
-            <div class="c-plan__imageblock">
-                <figure>
-                    <picture>
-                        <source media="(max-width: 992px)" srcset="<%= planimage.imageurlsp %>">
-                        <img class="c-plan__image" src="<%= planimage.imageurl %>" alt="plan">
-                    </picture>
-                    <figcaption class="c-plan__imagelabel">
-                        <%= planimage.label %>
-                    </figcaption>
-                </figure>
-            </div>
-            <% }) %>
+<section class="c-plan">
+    <div class="c-plan__wrapper  l-container--1200px">
+        <div class="c-plan__headingblock">
+            <h2 class="c-plan__heading">PLAN</h2>
+            <hr class="c-plan__headingline">
+        </div>
+        <div class="c-plan__imagesblock">
+            <% planimages.forEach(planimage=> { %>
+                <div class="c-plan__imageblock">
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="<%= planimage.imageurlsp %>">
+                            <img class="c-plan__image" src="<%= planimage.imageurl %>" alt="plan">
+                        </picture>
+                        <figcaption class="c-plan__imagecaption">
+                            <lable class="c-plan__imagelabel">
+                                <%= planimage.label %>
+                            </lable>
+                        </figcaption>
+                    </figure>
+                </div>
+                <% }) %>
 
-    </div>
-    <div class="c-plan__areablock">
-        <% areainfos.forEach(areainfo=> { %>
-            <p class="c-plan__areainfo">
-                <%= areainfo.areadata %>
-            </p>
-            <% }) %>
-    </div>
-    <div class="c-plan__details">
-        <table>
-            <tbody>
-                <% plandetails.forEach(plandetail=> { %>
-                    <tr>
-                        <th>
-                            <%= plandetail.tablehead %>
-                        </th>
-                        <td>
-                            <% if (typeof plandetail.tabledatas=="object" ) {plandetail.tabledatas.forEach(tabledata=> {
-                                %>
-                                <label>
-                                    <%= tabledata.label %>
-                                </label>
-                                <% })} else { %>
-                                    <%= plandetail.tabledatas %>
-                                        <% } %>
-                        </td>
-                    </tr>
-                    <% }) %>
-            </tbody>
-        </table>
+        </div>
+        <div class="c-plan__areablock">
+            <% areainfos.forEach(areainfo=> { %>
+                <p class="c-plan__areainfo">
+                    <%= areainfo.areadata %>
+                </p>
+                <% }) %>
+        </div>
+        <div class="c-plan__tablewrapper">
+            <table class="c-plan__table">
+                <tbody>
+                    <% plandetails.forEach(plandetail=> { %>
+                        <tr class="c-plan__tablerow">
+                            <th class="c-plan__tablecell c-plan__tableheader">
+                                <%= plandetail.tablehead %>
+                            </th>
+                            <td class="c-plan__tablecell c-plan__tabledata">
+                                <% if (typeof plandetail.tabledatas=="object" )
+                                    {plandetail.tabledatas.forEach(tabledata=> {
+                                    %>
+                                    <label class="c-plan__tablelabel">
+                                        <%= tabledata.label %>
+                                    </label>
+                                    <% })} else { %>
+                                        <%= plandetail.tabledatas %>
+                                            <% } %>
+                            </td>
+                        </tr>
+                        <% }) %>
+                </tbody>
+            </table>
+        </div>
     </div>
 </section>

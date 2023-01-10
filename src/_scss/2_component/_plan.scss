@@ -1,0 +1,342 @@
+.c-plan {
+  padding: 120px 50px 90px;
+  @include tab {
+    padding-top: 85px;
+
+    @include sp {
+      padding: 42px 15px 70px;
+    }
+  }
+
+  .c-plan__wrapper {
+    overflow: hidden;
+  }
+
+  .c-plan__headingblock {
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .c-plan__heading {
+    font-family: $special-fonts2;
+    color: #000;
+    font-weight: 400;
+    font-size: 4.8rem;
+    letter-spacing: 4.2px;
+    @include tab {
+      font-size: 3.6rem;
+      @include sp {
+        font-size: 2.4rem;
+        letter-spacing: 2.3px;
+      }
+    }
+  }
+
+  .c-plan__headingline {
+    width: 60px;
+    margin-top: 23px;
+    @include tab {
+      width: 45px;
+
+      @include sp {
+        margin-top: 12px;
+        width: 29px;
+      }
+    }
+  }
+
+  .c-plan__imagesblock {
+    display: flex;
+    margin-top: 90px;
+    @include tab {
+      margin-top: 65px;
+
+      @include sp {
+        margin-top: 22px;
+        width: 106%;
+        margin-left: -5px;
+      }
+    }
+  }
+
+  .c-plan__imageblock {
+    &:nth-child(2) {
+      .c-plan__image {
+        @include sp {
+          margin-left: -2px;
+        }
+      }
+      .c-plan__imagelabel {
+        padding: 10px 13px 14px 15px;
+        @include sp {
+          padding: 5px 9px 9px 8px;
+          font-weight: 300;
+          font-size: 0.86rem;
+          margin-left: 26px;
+        }
+      }
+      .c-plan__imagecaption {
+        margin-top: 4px;
+        @include sp {
+          margin-top: -3px;
+        }
+      }
+    }
+  }
+
+  .c-plan__image {
+  }
+
+  .c-plan__imagecaption {
+    text-align: center;
+    @include sp {
+      text-align: left;
+      margin-top: -8px;
+    }
+  }
+
+  .c-plan__imagelabel {
+    color: #fff;
+    font-size: 1.46rem;
+    background-color: $main-color;
+    border-radius: 50%;
+    padding: 10px 13px 14px 15px;
+    margin-left: 2px;
+    @include tab {
+      //   font-size: 1.15rem;
+      //   padding: 7px;
+
+      @include sp {
+        padding: 7px;
+        font-weight: 300;
+        font-size: 0.86rem;
+        margin-left: 11px;
+        padding: 5px 9px 9px 8px;
+      }
+    }
+  }
+
+  .c-plan__areablock {
+    display: flex;
+    justify-content: center;
+    gap: 4.2%;
+    margin-top: 62px;
+    align-items: center;
+    padding: 0 8%;
+    @include scr1200px {
+      flex-direction: column;
+      @include tab {
+        margin-top: 45px;
+        @include sp {
+          margin-top: 21px;
+        }
+      }
+    }
+  }
+
+  .c-plan__areainfo {
+    font-weight: 300;
+    font-size: 2.2rem;
+    font-feature-settings: "palt";
+    @include tab {
+      font-size: 1.7rem;
+
+      @include sp {
+        font-size: 1.15rem;
+        line-height: 1.94;
+      }
+    }
+  }
+
+  .c-plan__tablewrapper {
+    padding-left: 5px;
+    @include sp {
+      padding-left: 0;
+    }
+  }
+
+  .c-plan__table {
+    margin-top: 94px;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 2.5rem;
+    font-weight: 300;
+    // margin-left: 5px;
+    @include tab {
+      margin-top: 65px;
+      @include sp {
+        font-size: 1.26rem;
+        margin-top: 9px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .c-plan__tablerow {
+    height: 80px;
+    border-bottom: solid #cbcbcb 1px;
+    // vertical-align: bottom;
+    &:not(:first-child) {
+      height: 81px;
+      @include sp {
+        height: 40px;
+      }
+    }
+
+    &:nth-child(2) {
+      @include sp {
+        th,
+        td {
+          padding-bottom: 6px;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .c-plan__tabledata {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 8px;
+        padding-left: 37px;
+        column-gap: 21px;
+        padding-top: 31px;
+        @include sp {
+          padding-left: 2px;
+          padding-top: 13px;
+          column-gap: 8px;
+        }
+
+        .c-plan__tablelabel {
+          &:nth-child(5) {
+            padding: 5px 16px 0px 11px;
+
+            @include sp {
+              //   margin-left: -7px;
+              padding: 1px 7px 4px 6px;
+            }
+          }
+        }
+      }
+
+      @include sp {
+        th,
+        td {
+          padding-top: 6px;
+          padding-bottom: 12px;
+        }
+
+        td {
+          row-gap: 6px !important;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .c-plan__tabledata {
+        padding-top: 30px;
+        padding-left: 38px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 6px;
+        @include sp {
+          padding-left: 2px;
+          column-gap: 8px;
+        }
+      }
+      .c-plan__tablelabel {
+        &:first-child {
+          padding: 5px 20px 0px 16px;
+
+          @include sp {
+            padding: 3px 9px 2px 6px;
+          }
+        }
+        &:not(:first-child) {
+          //   margin-left: 15px;
+
+          @include sp {
+            // position: relative;
+            // top: -1px;
+            padding-top: 2px;
+            // margin-left: 5px;
+            margin-left: 0;
+          }
+        }
+      }
+
+      @include sp {
+        th {
+          padding-top: 8px !important;
+        }
+
+        td {
+          padding-top: 13px !important;
+        }
+
+        th,
+        td {
+          padding-bottom: 12px;
+        }
+      }
+    }
+
+    @include sp {
+      height: 40px;
+    }
+  }
+
+  .c-plan__tablecell {
+    padding-bottom: 6px;
+    padding-top: 30px;
+    column-gap: 19px;
+    padding-left: 37px;
+    font-feature-settings: "palt";
+    @include sp {
+      padding-top: 20px;
+      padding-bottom: 8px;
+    }
+  }
+
+  .c-plan__tableheader {
+    text-align: left;
+    width: 20%;
+    font-weight: 300;
+    padding-right: 10px;
+    padding-left: 11px;
+    font-feature-settings: "palt";
+    @include tab {
+      width: 30%;
+
+      @include sp {
+        width: 35%;
+        padding-right: 10px;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .c-plan__tabledata {
+    padding-left: 48px;
+    @include tab {
+      @include sp {
+        padding-left: 8px;
+      }
+    }
+  }
+
+  .c-plan__tablelabel {
+    display: inline-block;
+    font-size: 2rem;
+    border: solid 1px #cbcbcb;
+    border-radius: 4px;
+    // margin-top: 10px;
+    padding: 5px 16px 0px;
+    height: 38px;
+    @include sp {
+      font-size: 0.85rem;
+      height: fit-content;
+      padding: 1px 8px 3px 6px;
+    }
+  }
+}

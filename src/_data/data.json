@@ -27,21 +27,21 @@
     {
       "id": 1,
       "heading": "実物を見て触って<span class='c-benefit__headblockhighlight'>体感</span>できます !",
-      "description": "カタログや資料だけではなく、高気密・高断熱の木<br class='is-inlineat1300px'>の住まいや、家事動線や収納スペースの女性目線で<br class='is-inlineat1300px'>叶った工夫など、実際に見て触ってご体感いただけます。 ",
+      "description": "カタログや資料だけではなく、高気密・高断熱の木<br class='is-inlinefrom993pxto1200px'>の住まいや、家事動線や収納スペースの女性目線で<br class='is-inlinefrom993pxto1200px'>叶った工夫など、実際に見て触ってご体感いただけます。 ",
       "imgurl": "./assets/img/benefits__articleimg1",
       "numberbulletimgurl": "./assets/img/benefits__numberbullet1.svg"
     },
     {
       "id": 2,
       "heading": "土地情報<span class='c-benefit__headblockhighlight'>1000件以上</span>が見放題!",
-      "description": "愛媛県の最新の土地情報から、学区・最寄りの駅な<br class='is-inlineat1300px'>どご希望の条件でお好きな土地をご覧いただけます<span class='is-palt'>。</span><br class='is-inlineat1300px'>さらに、地盤予測や付帯工事費なども含め、建てた<br class='is-inlineat1300px'>後も安心して暮らせる総合的な土地のアドバイスを<br class='is-inlineat1300px'>いたします。 ",
+      "description": "愛媛県の最新の土地情報から、学区・最寄りの駅な<br class='is-inlinefrom993pxto1200px'>どご希望の条件でお好きな土地をご覧いただけます<span class='is-palt'>。</span><br class='is-inlinefrom993pxto1200px'>さらに、地盤予測や付帯工事費なども含め、建てた<br class='is-inlinefrom993pxto1200px'>後も安心して暮らせる総合的な土地のアドバイスを<br class='is-inlinefrom993pxto1200px'>いたします。 ",
       "imgurl": "./assets/img/benefits__articleimg2",
       "numberbulletimgurl": "./assets/img/benefits__numberbullet2.svg"
     },
     {
       "id": 3,
       "heading": "お客様に合った<span class='c-benefit__headblockhighlight'>住宅ローン</span>を診断!",
-      "description": "住宅ローンアドバイザーの資格を持ったスタッフが<span class='is-palt'>、</span><br class='is-inlineat1300px'>住宅ローン提携5大金融機関からお客様に合った適<br class='is-inlineat1300px'>&nbsp; 正住宅ローンを診断いたします。 ",
+      "description": "住宅ローンアドバイザーの資格を持ったスタッフが<span class='is-palt'>、</span><br class='is-inlinefrom993pxto1200px'>住宅ローン提携5大金融機関からお客様に合った適<br class='is-inlinefrom993pxto1200px'>正住宅ローンを診断いたします。 ",
       "imgurl": "./assets/img/benefits__articleimg3",
       "numberbulletimgurl": "./assets/img/benefits__numberbullet3.svg"
     }
@@ -107,14 +107,14 @@
   "planimages": [
     {
       "id": 1,
-      "imageurl": "./assets/image/plan__image1f.jpg",
-      "imageurlsp": "./assets/image/plan__image1f--sp.jpg",
+      "imageurl": "./assets/img/plan__image1f.jpg",
+      "imageurlsp": "./assets/img/plan__image1f--sp.jpg",
       "label": "1F"
     },
     {
       "id": 2,
-      "imageurl": "./assets/image/plan__image2f.jpg",
-      "imageurlsp": "./assets/image/plan__image2f--sp.jpg",
+      "imageurl": "./assets/img/plan__image2f.jpg",
+      "imageurlsp": "./assets/img/plan__image2f--sp.jpg",
       "label": "2F"
     }
   ],

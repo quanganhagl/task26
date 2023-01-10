@@ -15,24 +15,24 @@
 // color
 //------------------------------------------------------------
 .is-inlinefrom993pxto1200px {
-  @media only screen and (max-width: 1200px) and (min-width: 993px) {
-    display: none;
-  }
+    @media only screen and (max-width: 1200px) and (min-width: 993px) {
+        display: none;
+    }
 }
 
 .is-palt {
-  font-feature-settings: "palt";
+    font-feature-settings: "palt";
 }
 
 .is-notdisplay--pc {
-  display: none;
-  @include tab {
-    display: unset;
-  }
+    display: none;
+    @include tab {
+        display: unset;
+    }
 }
 
 .is-notdisplay--sp {
-  @include tab {
-    display: none;
-  }
+    @include tab {
+        display: none;
+    }
 }
