@@ -187,5 +187,104 @@
         }
       ]
     }
+  ],
+  "finances": [
+    "借入金　・・・・・・・・・・3,400 万円",
+    "ボーナス払い・・・・・・・・・・0 万円",
+    "3 年固定金利・・・・・・・・・・0.725％",
+    "返済期間・・・・・・・・・・・・・35 年"
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "iconurl": "./assets/img/web__stepweb.svg",
+      "steptitle": "WEB予約",
+      "stepdescription": "入力フォームに必要事項を入力"
+    },
+    {
+      "id": 2,
+      "iconurl": "./assets/img/web__stepvisit.svg",
+      "steptitle": "ご来場",
+      "stepdescription": "来場されたら受付をお願いします"
+    },
+    {
+      "id": 3,
+      "iconurl": "./assets/img/web__stepform.svg",
+      "steptitle": "アンケート記入",
+      "stepdescription": "アンケート記入後、丁寧にご説明"
+    },
+    {
+      "id": 4,
+      "iconurl": "./assets/img/web__steptour.svg",
+      "steptitle": "ご見学・ご説明",
+      "stepdescription": "何でもお気軽に相談してください"
+    },
+    {
+      "id": 5,
+      "iconurl": "./assets/img/web__stepgift.svg",
+      "steptitle": "特典プレゼント！",
+      "stepdescription": "QUOカードプレゼント"
+    }
+  ],
+  "visitors": [
+    {
+      "id": 1,
+      "iconurl": "./assets/img/visitor__window.svg",
+      "description1": "常時店内・モデルハウス",
+      "description2": "換気中"
+    },
+    {
+      "id": 2,
+      "iconurl": "./assets/img/visitor__staffmask.svg",
+      "description1": "スタッフの",
+      "description2": "マスク着用義務化"
+    },
+    {
+      "id": 3,
+      "iconurl": "./assets/img/visitor__visitormask.svg",
+      "description1": "お客様へのマスク着用",
+      "description2": "をお願いしています"
+    },
+    {
+      "id": 4,
+      "iconurl": "./assets/img/visitor__distance.svg",
+      "description1": "ソーシャルディスタンス",
+      "description2": "（2m）を維持した打合せ"
+    },
+    {
+      "id": 5,
+      "iconurl": "./assets/img/visitor__fever.svg",
+      "description1": "発熱のあるスタッフ・",
+      "description2": "お客様の出社・入店禁止"
+    },
+    {
+      "id": 6,
+      "iconurl": "./assets/img/visitor__clean.svg",
+      "description1": "こまめな除菌"
+    },
+    {
+      "id": 7,
+      "iconurl": "./assets/img/visitor__cough.svg",
+      "description1": "咳エチケットを",
+      "description2": "徹底しています"
+    },
+    {
+      "id": 8,
+      "iconurl": "./assets/img/visitor__handwash.svg",
+      "description1": "スタッフ・お客様",
+      "description2": "アルコール除菌"
+    },
+    {
+      "id": 9,
+      "iconurl": "./assets/img/visitor__meeting.svg",
+      "description1": "web設計打合せを",
+      "description2": "推奨しています"
+    },
+    {
+      "id": 10,
+      "iconurl": "./assets/img/visitor__home.svg",
+      "description1": "webおうち相談会を",
+      "description2": "推奨しています"
+    }
   ]
 }

@@ -1,0 +1,43 @@
+<section class="c-web">
+    <div class="c-web__wrapper">
+        <h2 class="c-web__heading">WEB来場予約が<span class="c-web__headingemphasis">オススメ！</span></h2>
+
+        <p class="c-web__description">待ち時間ナシ！混雑をきにせず来場 OK ！</p>
+        <p class="c-web__description">経験豊富なスタッフがしっかりとご対応いたします。</p>
+        <div class="c-web__steps">
+            <% steps.forEach(step=> { %>
+                <div class="c-web__steparrowblock">
+                    <div class="c-web__stepblock">
+                        <img src="<%= step.iconurl %>" alt="<%= step.steptitle %>" class="c-web__stepicon">
+                        <h3 class="c-web__steptitle">
+                            <%= step.steptitle %>
+                        </h3>
+                        <hr class="c-web__stepline">
+                        <p class="c-web__stepdescription">
+                            <%= step.stepdescription %>
+                        </p>
+                    </div>
+                    <div class="c-web__arrowblock--sp is-notdisplay--pcweb ">
+                        <img src="./assets/img/web__arrow.svg" alt="WEB来場予約が"
+                            class="c-web__arrow--sp is-notdisplay--pcweb ">
+                    </div>
+                </div>
+
+                <%})%>
+        </div>
+        <div class="is-notdisplay--sp c-web__arrowblockswrapper ">
+            <div class="is-notdisplay--sp c-web__arrowblock ">
+                <img src="./assets/img/web__arrow.svg" alt="WEB来場予約が" class="is-notdisplay--sp c-web__arrow ">
+            </div>
+            <div class="is-notdisplay--sp c-web__arrowblock ">
+                <img src="./assets/img/web__arrow.svg" alt="WEB来場予約が" class="is-notdisplay--sp c-web__arrow ">
+            </div>
+            <div class="is-notdisplay--sp c-web__arrowblock ">
+                <img src="./assets/img/web__arrow.svg" alt="WEB来場予約が" class="is-notdisplay--sp c-web__arrow ">
+            </div>
+            <div class="is-notdisplay--sp c-web__arrowblock ">
+                <img src="./assets/img/web__arrow.svg" alt="WEB来場予約が" class="is-notdisplay--sp c-web__arrow ">
+            </div>
+        </div>
+    </div>
+</section>

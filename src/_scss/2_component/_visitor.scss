@@ -1,0 +1,524 @@
+.c-visitor {
+    padding: 23px 5% 108px;
+    @include tab {
+        padding: 23px 8% 108px;
+    }
+    @include sp {
+        padding: 43px 5.7% 108px;
+    }
+
+    .c-visitor__wrapper {
+    }
+
+    .c-visitor__headingblock {
+        background-color: $main-color;
+        text-align: center;
+        padding: 59px 5% 50px;
+        @include sp {
+            padding: 26px 5% 30px;
+        }
+    }
+
+    .c-visitor__headingtitle {
+        color: #fff;
+        font-weight: 300;
+        font-size: 3.2rem;
+        @include tab {
+            font-size: 2.5rem;
+        }
+    }
+
+    .c-visitor__label {
+        background-color: #fff;
+        font-weight: 400;
+        font-size: 2.33rem;
+        color: #231815;
+        margin-right: 58px;
+        display: inline-block;
+        width: 238px;
+        height: 51px;
+        border-radius: 23px;
+        line-height: 51px;
+        transform: translateX(13px);
+        @include tab {
+            transform: scale(0.9);
+            margin-right: 0;
+        }
+        @include sp {
+            font-weight: 700;
+            font-size: 1.17rem;
+            width: 119px;
+            height: 26px;
+            transform: unset;
+            line-height: 26px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .c-visitor__headingtitletext {
+        transform: translateX(39px);
+        letter-spacing: 3.2px;
+        font-feature-settings: "palt";
+        @include sp {
+            font-size: 1.6rem;
+            display: block;
+            letter-spacing: 0;
+            letter-spacing: 1.6px;
+            margin-top: 7px;
+            line-height: 1.2;
+            transform: unset;
+        }
+    }
+
+    .c-visitor__headingdescription {
+        color: #fff;
+        font-weight: 300;
+        font-size: 2rem;
+        margin-top: 22px;
+        font-feature-settings: "palt";
+        letter-spacing: 2px;
+        margin-left: 23px;
+        @include tab {
+            font-size: 1.5rem;
+        }
+        @include sp {
+            font-size: 1rem;
+            margin-top: 8px;
+            letter-spacing: 1px;
+            margin-left: -1px;
+            line-height: 1.66;
+        }
+    }
+
+    .c-visitor__guidelines {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 37px 3.4% 36px;
+        border: 1px solid $main-color;
+    }
+
+    .c-visitor__guideblock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 0 0.8% 30px;
+        @include sp {
+            padding: 0 0.8% 14px !important;
+        }
+
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(10) {
+            padding: 0 0.8% 43px;
+        }
+
+        flex: 1 1 20%;
+
+        &:nth-child(5),
+        &:nth-child(10) {
+            flex: 1 1 17.6%;
+            @include sp {
+                padding: 0 0.8% 19px !important;
+            }
+        }
+        @include tab {
+            flex: 1 1 50%;
+
+            &:nth-child(5),
+            &:nth-child(10) {
+                flex: 1 1 50%;
+            }
+        }
+
+        /* border of guidelines
+        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+        @include pconly {
+            border-right: 1px solid #aeaeae;
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5) {
+                border-bottom: 1px solid #aeaeae;
+            }
+
+            &:nth-child(5),
+            &:nth-child(10) {
+                border-right: 0;
+            }
+        }
+
+        @include tab {
+            border-bottom: 1px solid #aeaeae;
+
+            &:nth-child(1),
+            &:nth-child(6),
+            &:nth-child(3),
+            &:nth-child(8),
+            &:nth-child(5) {
+                border-right: 1px solid #aeaeae;
+            }
+
+            &:nth-child(5),
+            &:nth-child(10) {
+                border-bottom: 0;
+            }
+        }
+        /*border of guidelines
+        >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+        &:nth-child(1) {
+            @include tab {
+                order: 1;
+            }
+
+            .c-visitor__guideicon {
+                margin-top: 28px;
+                margin-left: -14px;
+                @include sp {
+                    margin-top: 0;
+                    margin-left: 10px;
+                }
+            }
+
+            .c-visitor__guidedescription {
+                margin-left: -15px;
+                @include sp {
+                    margin-left: 9px;
+                }
+
+                &:nth-of-type(1) {
+                    margin-top: 21px;
+                    font-feature-settings: "palt";
+                    @include sp {
+                        margin-top: -4px;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            @include tab {
+                order: 2;
+            }
+
+            .c-visitor__guideicon {
+                width: 98px;
+                margin-top: 22px;
+                @include sp {
+                    width: 98px;
+                    margin-top: -4px;
+                    margin-left: -1px;
+                }
+            }
+
+            .c-visitor__guidedescription {
+                @include sp {
+                    line-height: 1.3;
+                    margin-left: -11px;
+                }
+
+                &:nth-of-type(1) {
+                    margin-top: 25px;
+                    @include sp {
+                        margin-top: -2px;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            @include tab {
+                order: 5;
+            }
+
+            .c-visitor__guideicon {
+                width: 129px;
+                margin-top: 20px;
+                @include sp {
+                    margin-top: -4px;
+                    margin-left: 10px;
+                }
+            }
+
+            .c-visitor__guidedescription {
+                @include sp {
+                    line-height: 1.3;
+                    margin-left: 9px;
+                    transform: scaleX(0.84);
+                }
+
+                &:nth-of-type(1) {
+                    margin-top: 8px;
+                    @include sp {
+                        margin-top: -17px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    letter-spacing: -1px;
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            @include tab {
+                order: 6;
+            }
+
+            .c-visitor__guideicon {
+                width: 154px;
+                margin-top: 55px;
+                @include sp {
+                    margin-top: 18px;
+                    margin-left: -9px;
+                }
+            }
+
+            .c-visitor__guidedescription {
+                @include sp {
+                    line-height: 1.3rem;
+                    transform: scaleX(0.84);
+                    margin-left: -8px;
+                }
+
+                &:nth-of-type(1) {
+                    margin-top: 29px;
+                    @include sp {
+                        margin-top: 21px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    font-feature-settings: "palt";
+                }
+            }
+        }
+
+        &:nth-child(5) {
+            @include tab {
+                order: 9;
+            }
+
+            .c-visitor__guideicon {
+                width: 94px;
+                margin-top: 23px;
+                margin-left: 11px;
+                @include sp {
+                    margin-top: -4px;
+                }
+            }
+
+            .c-visitor__guidedescription {
+                margin-left: 8px;
+                @include sp {
+                    transform: scaleX(0.83);
+                    line-height: 1.3;
+                }
+
+                &:nth-of-type(1) {
+                    margin-top: 16px;
+                    @include sp {
+                        margin-top: -11px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    letter-spacing: -0.9px;
+                }
+            }
+        }
+
+        &:nth-child(6) {
+            @include tab {
+                order: 3;
+            }
+
+            .c-visitor__guideicon {
+                margin-top: 18px;
+                width: 100px;
+                @include sp {
+                    margin-top: -10px;
+                    margin-left: 11px;
+                }
+            }
+
+            .c-visitor__guidedescription {
+                @include sp {
+                    margin-top: -10px;
+                    margin-left: 11px;
+                }
+            }
+        }
+
+        &:nth-child(7) {
+            @include tab {
+                order: 4;
+            }
+
+            .c-visitor__guideicon {
+                margin-top: 24px;
+                width: 88px;
+                @include sp {
+                    margin-top: 0;
+                    margin-left: -8px;
+                }
+            }
+
+            .c-visitor__guidedescription {
+                @include sp {
+                    margin-left: -11px;
+                }
+
+                &:nth-of-type(1) {
+                    margin-top: 27px;
+                    @include sp {
+                        margin-top: -3px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    letter-spacing: -0.9px;
+                }
+            }
+        }
+
+        &:nth-child(8) {
+            @include tab {
+                order: 7;
+            }
+
+            .c-visitor__guideicon {
+                margin-top: 26px;
+                width: 112px;
+                @include sp {
+                    margin-top: 2px;
+                    margin-left: 11px;
+                }
+            }
+
+            .c-visitor__guidedescription {
+                @include sp {
+                    margin-left: 12px;
+                }
+
+                &:nth-of-type(1) {
+                    margin-top: 18px;
+                    @include sp {
+                        margin-top: -8px;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(9) {
+            @include tab {
+                order: 8;
+            }
+
+            .c-visitor__guideicon {
+                margin-top: 24px;
+                width: 124px;
+                @include sp {
+                    margin-top: -1px;
+                    margin-left: -10px;
+                }
+            }
+
+            .c-visitor__guidedescription {
+                @include sp {
+                    margin-left: -10px;
+                }
+
+                &:nth-of-type(1) {
+                    margin-top: 18px;
+                    @include sp {
+                        margin-top: -9px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    letter-spacing: -0.9px;
+                }
+            }
+        }
+
+        &:nth-child(10) {
+            @include tab {
+                order: 10;
+            }
+
+            .c-visitor__guideicon {
+                margin-top: 20px;
+                width: 121px;
+                margin-left: 10px;
+                @include sp {
+                    margin-top: -7px;
+                    margin-left: -10px;
+                }
+            }
+
+            .c-visitor__guidedescription {
+                margin-left: 10px;
+                @include sp {
+                    margin-left: -13px;
+                    transform: scaleX(0.84);
+                    line-height: 1.2;
+                }
+
+                &:nth-of-type(1) {
+                    margin-top: 8px;
+                    @include sp {
+                        margin-top: -14px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    letter-spacing: -0.9px;
+                }
+            }
+        }
+    }
+
+    .c-visitor__guideicon {
+        margin-top: 28px;
+        margin-left: -14px;
+        width: 105px;
+        @include scr1200px {
+            transform: scale(0.75);
+        }
+        @include tab {
+            transform: unset;
+        }
+        @include sp {
+            transform: scale(0.6);
+        }
+    }
+
+    .c-visitor__guidedescription {
+        margin-left: -15px;
+        font-size: 1.5rem;
+        @include scr1200px {
+            font-size: 1.2rem;
+        }
+
+        @include tab {
+            font-size: 1.5rem;
+        }
+        @include sp {
+            font-size: 1.1rem;
+            transform: scaleX(0.8);
+        }
+
+        &:nth-of-type(1) {
+            margin-top: 21px;
+            font-feature-settings: "palt";
+        }
+    }
+}

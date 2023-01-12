@@ -1,0 +1,38 @@
+<section class="c-finance">
+    <div class="c-finance__wrapper">
+        <div class="c-finance__headingblock">
+            <h2 class="c-finance__heading">FINANCE</h2>
+            <hr class="c-finance__headingline">
+        </div>
+    </div>
+    <div class="c-finance__loan">
+        <span class="c-finance__loantext">
+            3,400万円借入の場合
+        </span>
+    </div>
+    <div class="c-finance__financedetails">
+        <div class="c-finance__detailsinnerblock c-finance__calc">
+            <% finances.forEach(finance=> { %>
+                <p class="c-finance__calctext">
+                    <%=finance%>
+                </p>
+                <% }) %>
+        </div>
+        <div class="c-finance__detailsinnerblock c-finance__result">
+            <div class="c-finance__resultwrapper">
+                <h3 class="c-finance__resultheading">月々のお支払い</h3>
+                <div class="c-finance__downpmt">
+                    <span class="c-finance__downpmthead">頭金
+                    </span>
+                    <div class="c-finance__downpmtnumcur">
+                        <span class="c-finance__downpmtnum">0</span>
+                        <span class="c-finance__downpmtcurrency"> 円</span>
+                    </div>
+                </div>
+                <p class="c-finance__monthly"><span class="c-finance__monthlynum">91,682</span>円</p>
+                <p class="c-finance__salesprice">土地付建物販売価格　3,400 万円（税込）</p>
+            </div>
+        </div>
+    </div>
+
+</section>

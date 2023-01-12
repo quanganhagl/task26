@@ -1,0 +1,31 @@
+<section class="c-visitor">
+    <div class="c-visitor__wrapper l-container--1200px">
+        <div class="c-visitor__headingblock">
+            <h2 class="c-visitor__headingtitle">
+                <label class="c-visitor__label">
+                    ご来場のお客様へ
+                </label>
+                <span class="c-visitor__headingtitletext">
+                    新型コロナウイルス<br class="is-only--sp">感染症予防対策につきまして
+                </span>
+            </h2>
+            <p class="c-visitor__headingdescription">
+                ウェブココでは新型コロナウイルス<br class="is-only--sp">感染拡大防止のため、対策を講じて<br class="is-only--sp">おりますので安心してご利用ください。
+            </p>
+        </div>
+        <div class="c-visitor__guidelines">
+            <% visitors.forEach(visitor=> { %>
+                <div class="c-visitor__guideblock">
+                    <img src="<%= visitor.iconurl %>" alt="<%=visitor.description1 %> <%= visitor.description2 %>"
+                        class="c-visitor__guideicon">
+                    <p class="c-visitor__guidedescription">
+                        <%= visitor.description1 %>
+                    </p>
+                    <p class="c-visitor__guidedescription">
+                        <%= visitor.description2 %>
+                    </p>
+                </div>
+                <% }) %>
+        </div>
+    </div>
+</section>

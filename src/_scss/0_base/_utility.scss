@@ -36,3 +36,10 @@
         display: none;
     }
 }
+
+.is-only--sp {
+    display: none;
+    @include sp {
+        display: unset;
+    }
+}
