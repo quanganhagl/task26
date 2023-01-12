@@ -286,5 +286,22 @@
       "description1": "webおうち相談会を",
       "description2": "推奨しています"
     }
+  ],
+  "infos": [
+    {
+      "id": 1,
+      "label": "開催日",
+      "content": "8 月 20 日（土<span class='is-palt'>）</span>・21 日（日）"
+    },
+    {
+      "id": 2,
+      "label": "時間",
+      "content": "10：00 ～ 17：00 ※完全予約制"
+    },
+    {
+      "id": 3,
+      "label": "開催場所",
+      "content": "〒000-0000 愛媛県今治市 000-0"
+    }
   ]
 }

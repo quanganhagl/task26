@@ -1,0 +1,28 @@
+<section class="c-access">
+    <div class="c-access__mapblock">
+        <iframe class="c-access__map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3306.1262063157424!2d132.99597535318975!3d34.040633567491234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35503ac39140386f%3A0xb82dddfa210ff1cf!2z44GV44GE44GV44GE44GN44Gm5bGL!5e0!3m2!1sja!2s!4v1666241500828!5m2!1sja!2s"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="c-access__infoblock">
+        <div class="c-access__infoblockwrapper">
+            <h2 class="c-access__heading">ACCESS</h2>
+            <hr class="c-access__linebreak">
+            <p class="c-access__notetop">完全ご予約制見学会</p>
+            <div class="c-access__detailsblock">
+                <% infos.forEach(info=> { %>
+
+                    <div class="c-access__datetimevenueblock">
+                        <span class="c-access__datetimevenuelabel">
+                            <%= info.label %>
+                        </span>
+                        <p class="c-access__datetimevenueinfo">
+                            <%- info.content %>
+                        </p>
+                    </div>
+                    <% }) %>
+            </div>
+            <p class="c-access__notebottom">※車でお越しの際は、ナビで上記住所を設定してください。</p>
+        </div>
+    </div>
+</section>

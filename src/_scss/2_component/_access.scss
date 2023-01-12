@@ -1,0 +1,189 @@
+.c-access {
+    padding: 54px 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .c-access__mapblock {
+        flex: 0 1 50%;
+        height: 701px;
+        @include tab {
+            flex: 1 1 100%;
+        }
+        @include sp {
+            height: 291px;
+        }
+    }
+
+    .c-access__map {
+        width: 100%;
+        height: 701px;
+        @include sp {
+            height: 291px;
+        }
+    }
+
+    .c-access__infoblock {
+        background-color: $secondary-color;
+        padding: 132px 0% 0;
+        flex: 0 1 50%;
+        @include tab {
+            flex: 1 1 100%;
+            padding: 100px 0;
+        }
+        @include sp {
+            padding: 46px 0 37px;
+        }
+    }
+
+    .c-access__infoblockwrapper {
+        // display: flex;
+        color: #000;
+        // flex-direction: column;
+        // align-items: center;
+    }
+
+    .c-access__heading {
+        font-family: $special-fonts2;
+        font-weight: 400;
+        font-size: 4.8rem;
+        // margin-left: -53px;
+        letter-spacing: 4.8px;
+        @include scr1200pxuponly {
+            margin-left: 38.6%;
+        }
+        @include scr1200px {
+            font-size: 3.6rem;
+            text-align: center;
+        }
+        @include tab {
+            font-size: 4.8rem;
+        }
+        @include sp {
+            font-size: 2.4rem;
+            letter-spacing: 2.4px;
+            margin-left: 20px;
+        }
+    }
+
+    .c-access__linebreak {
+        width: 74px;
+        height: 1px;
+        margin-top: 16px;
+        // transform: translateX(-30px);
+        @include scr1200pxuponly {
+            margin-left: calc(38.1% + 46px);
+        }
+        @include sp {
+            width: 37px;
+            margin-top: 7px;
+            transform: translateX(8px);
+        }
+    }
+
+    .c-access__notetop {
+        font-weight: 300;
+        font-size: 2.8rem;
+        margin-top: 23px;
+        @include scr1200pxuponly {
+            margin-left: calc(39% - 50px);
+        }
+        @include scr1200px {
+            text-align: center;
+            font-size: 2.4rem;
+        }
+        @include tab {
+            font-size: 2.8rem;
+        }
+        @include sp {
+            font-size: 1.42rem;
+            margin-top: 11px;
+            margin-left: 16px;
+        }
+    }
+
+    .c-access__detailsblock {
+        margin-top: 87px;
+        @include scr1200pxuponly {
+            margin-left: calc(39.4% - 197px);
+        }
+        @include scr1200px {
+            width: fit-content;
+            margin: 87px auto;
+        }
+        @include tab {
+            margin: 60px auto;
+        }
+        @include sp {
+            margin: 38px auto;
+            transform: translateX(4px);
+        }
+    }
+
+    .c-access__datetimevenueblock {
+        &:not(:nth-child(1)) {
+            margin-top: 12px;
+            @include sp {
+                margin-top: 1px;
+            }
+        }
+
+        &:nth-child(3) {
+            .c-access__datetimevenuelabel {
+                transform: translateY(-1px);
+            }
+        }
+    }
+
+    .c-access__datetimevenuelabel {
+        color: #fff;
+        font-size: 2.5rem;
+        background-color: #565f64;
+        width: 120px;
+        height: 47px;
+        display: inline-block;
+        margin-right: 17px;
+        text-align: center;
+        line-height: 47px;
+        @include scr1200px {
+            font-size: 2rem;
+        }
+        @include sp {
+            font-size: 1.25rem;
+            width: 60px;
+            height: 24px;
+            line-height: 24px;
+        }
+    }
+
+    .c-access__datetimevenueinfo {
+        font-size: 2.5rem;
+        display: inline-block;
+        @include scr1200px {
+            font-size: 2rem;
+        }
+        @include sp {
+            font-size: 1.25rem;
+            transform: translate(-11px, -1px);
+        }
+    }
+
+    .c-access__notebottom {
+        font-size: 1.5rem;
+        margin-top: 13px;
+        margin-left: calc(44.4% - 96px);
+        @include scr1200px {
+            font-size: 1.3rem;
+        }
+        @include tab {
+            font-size: 1.5rem;
+        }
+        @include sp {
+            font-size: 0.8rem;
+            margin-top: -33px;
+
+            margin-left: auto;
+            margin-right: 9%;
+            text-align: end;
+        }
+    }
+}

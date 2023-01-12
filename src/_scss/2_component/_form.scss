@@ -1,0 +1,31 @@
+.c-form {
+    padding: 88px 50px;
+    @include sp {
+        padding: 18px 29px;
+    }
+
+    .c-form__block {
+        height: 283px;
+        color: #000;
+        font-family: $special-fonts2;
+        font-weight: 400;
+        font-size: 4.76rem;
+        border: 1px solid #000;
+        display: flex;
+        letter-spacing: 4.8px;
+        align-items: center;
+        justify-content: center;
+        @include sp {
+            font-size: 2.38rem;
+            height: 110px;
+            letter-spacing: 2.4px;
+        }
+
+        .c-form__text {
+            transform: translate(4px, 3px);
+            @include sp {
+                transform: translate(1px, 5px);
+            }
+        }
+    }
+}

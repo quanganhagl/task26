@@ -1,6 +1,22 @@
-/*------------------------------------------------------------
-footer
-------------------------------------------------------------*/
 .c-footer {
+    padding-bottom: 80px;
+    @include sp {
+        padding-bottom: 30px;
+    }
 
+    .c-footer__link {
+        display: block;
+        text-align: center;
+        margin-top: -4px;
+        @include sp {
+            margin-top: 15px;
+        }
+    }
+
+    .c-footer__logo {
+        @include sp {
+            max-width: 103px;
+            width: 100%;
+        }
+    }
 }
