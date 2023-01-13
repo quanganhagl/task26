@@ -2,107 +2,116 @@
 // clearfix
 //============================================
 @mixin clear {
-    *zoom: 1;
+  *zoom: 1;
 
-    &::after {
-        display: block;
-        content: "";
-        clear: both;
-    }
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 }
 
 //============================================
 // breakpoint
 //============================================
 @mixin scr375px {
-    @media only screen and (max-width: 375px) {
-        @content;
-    }
+  @media only screen and (max-width: 375px) {
+    @content;
+  }
 }
 
 @mixin sp {
-    @media only screen and (max-width: 576px) {
-        @content;
-    }
+  @media only screen and (max-width: 576px) {
+    @content;
+  }
 }
 
 @mixin tab {
-    @media only screen and (max-width: 992px) {
-        @content;
-    }
+  @media only screen and (max-width: 992px) {
+    @content;
+  }
 }
 
 @mixin tabonly {
-    @media only screen and (max-width: 992px) and (min-width: 577px) {
-        @content;
-    }
+  @media only screen and (max-width: 992px) and (min-width: 577px) {
+    @content;
+  }
 }
 
 @mixin scr1200px {
-    @media only screen and (max-width: 1200px) {
-        @content;
-    }
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
 }
 
 @mixin pconly {
-    @media only screen and (min-width: 993px) {
-        @content;
-    }
+  @media only screen and (min-width: 993px) {
+    @content;
+  }
 }
 
 @mixin scr1200pxuponly {
-    @media only screen and (min-width: 1200px) {
-        @content;
-    }
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
 }
 
 //============================================
 // font-family
 //============================================
 @font-face {
-    font-family: "NotoSansJP";
-    font-weight: 300;
-    src: url("./assets/font/NotoSansJP-Light.otf");
+  font-family: "NotoSansJP";
+  font-weight: 300;
+  src: url("../../assets/font/NotoSansJP-Light.otf");
 }
 
 @font-face {
-    font-family: "NotoSansJP";
-    font-weight: 400;
-    src: url("./assets/font/NotoSansJP-Regular.otf");
+  font-family: "NotoSansJP";
+  font-weight: 400;
+  src: url("../../assets/font/NotoSansJP-Regular.otf");
 }
 
 @font-face {
-    font-family: "NotoSansJP";
-    font-weight: 700;
-    src: url("./assets/font/NotoSansJP-Bold.otf");
+  font-family: "NotoSansJP";
+  font-weight: 700;
+  src: url("../../assets/font/NotoSansJP-Bold.otf");
 }
 
 @font-face {
-    font-family: "NotoSerifJP";
-    font-weight: 400;
-    src: url("./assets/font/NotoSerifJP-Regular.otf");
+  font-family: "NotoSerifJP";
+  font-weight: 400;
+  src: url("../../assets/font/NotoSerifJP-Regular.otf");
 }
 
 @font-face {
-    font-family: "NotoSerifJP";
-    font-weight: 700;
-    src: url("./assets/font/NotoSerifJP-Bold.otf");
+  font-family: "NotoSerifJP";
+  font-weight: 700;
+  src: url("../../assets/font/NotoSerifJP-Bold.otf");
 }
 
 @font-face {
-    font-family: "Oswald";
-    font-weight: 400;
-    src: url("./assets/font/Oswald-Regular.otf");
+  font-family: "Oswald";
+  font-weight: 400;
+  src: url("../../assets/font/Oswald-Regular.otf");
 }
 
 @font-face {
-    font-family: "Roboto";
-    font-weight: 400;
-    src: url("./assets/font/Roboto-Regular.otf");
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../../assets/font/Roboto-Regular.otf");
 }
 
 @font-face {
-    font-family: "Roboto";
-    font-weight: 700;
-    src: url("./assets/font/Roboto-Bold.otf");
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../../assets/font/Roboto-Bold.otf");
+}
+
+@font-face {
+  font-family: "Kozuka Gothic Pr6N";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Kozuka Gothic Pr6N"),
+    url("https://fonts.cdnfonts.com/s/28722/KozGoPr6NRegular.woff")
+      format("woff");
 }
